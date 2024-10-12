@@ -37,6 +37,15 @@ void traversal(struct node*head)
     printf("\n");
 }
 
+void reverseTraversal(struct node*head){
+    struct node*temp=head;
+    while (temp->next!=NULL)
+    {
+        temp=temp->next;
+    }
+    
+}
+
 void insertAtBegginging(struct node*head){
     struct node*newNode=(struct node*)malloc(sizeof(struct node));
     newNode->prev=NULL;
@@ -91,7 +100,7 @@ int main(){
     traversal(head);
     // insertAtBegginging(head);
     // insertAtEnd(head);
-    insertAfterGivenElement(head);
+    // insertAfterGivenElement(head);
     traversal(head);
     return 0;
 }
